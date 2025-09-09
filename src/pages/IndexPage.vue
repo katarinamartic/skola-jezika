@@ -17,6 +17,9 @@
       <q-btn color="primary" label="Idi na Upise" @click="$router.push('/upisi')" />
 
     </div>
+    <div class="flex q-gutter-md q-mt-sm">
+    <q-btn color="primary" label="Vidi statistiku" @click="$router.push('/statistika')" />
+    </div>
   </q-page>
 </template>
 
