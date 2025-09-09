@@ -15,9 +15,6 @@
             row-key="ime"
             flat
           >
-            <template v-slot:top>
-              <q-btn color="primary" label="Pročitaj" @click="loadStatistikeProfesora" />
-            </template>
           </q-table>
         </q-card-section>
       </q-card>
@@ -34,9 +31,6 @@
             row-key="jezik"
             flat
           >
-            <template v-slot:top>
-              <q-btn color="primary" label="Pročitaj" @click="loadStatistikeJezika" />
-            </template>
           </q-table>
         </q-card-section>
       </q-card>
@@ -53,9 +47,6 @@
             row-key="tecaj"
             flat
           >
-            <template v-slot:top>
-              <q-btn color="primary" label="Pročitaj" @click="loadDetaljiTecajeva" />
-            </template>
           </q-table>
         </q-card-section>
       </q-card>
