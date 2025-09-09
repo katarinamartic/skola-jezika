@@ -12,7 +12,6 @@
         @update:selected="onSelectionRow"
       >
         <template v-slot:top>
-          <q-btn color="primary" label="Pročitaj" @click="onRead" />
           <q-space />
           <q-btn color="primary" label="Novi profesor" @click="onAddRow" />
           <q-btn

@@ -4,7 +4,7 @@ const mysql = require("mysql2/promise");
 const config = require("./config");
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 // Middleware
 app.use(express.json());
@@ -22,12 +22,6 @@ async function query(sql, params = {}) {
     throw error;
   }
 }
-
-// TEST RUTE - provjeri da li server radi
-app.get("/", (req, res) => {
-  res.json({ message: "API server radi!", timestamp: new Date() });
-});
-
 
 // PROFESORI API
 
@@ -292,3 +286,6 @@ app.post("/api/login", (req, res) => {
   }
 });
 
+app.listen(port, ()=>{
+  console.log(`API server je pokrenut na http:localhost:${port}`)
+})
